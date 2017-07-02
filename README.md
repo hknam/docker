@@ -18,7 +18,7 @@ Prerequisites
 >- RUN /bin/bash -c " "
 
 ## Connect to host port in Dockerfile
->- EXPOST [port]
+>- EXPOSE [port]
 
 # RUN Docker image
 >- docker run -i -t --name &lt;containterName&gt; -p [host]:[container] &lt;REPOSITORY:TAG&gt; /bin/bash
