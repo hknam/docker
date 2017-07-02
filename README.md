@@ -15,7 +15,7 @@ Prerequisites
 >docker build &lt;options&gt; &lt;/path/to/Dockerfile&gt; --tag &lt;REPOSITORY:TAG&gt; **.**
 
 ## Bash commands in Dockerfile
->- RUN /bin/bash -c ""
+>- RUN /bin/bash -c " "
 
 ## Connect to host port in Dockerfile
 >- EXPOST [port]
