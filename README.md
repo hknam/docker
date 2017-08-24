@@ -23,5 +23,5 @@ Prerequisites
 # RUN Docker image
 >- docker run -i -t --name &lt;containterName&gt; -p [host]:[container] &lt;REPOSITORY:TAG&gt; /bin/bash
 
-# RUN Container disable AppArmor seciruty
+# RUN Container disable AppArmor security
 >- docker run --rm -it --security-opt apparmor=docker-default [IMAGE] /bin/bash
