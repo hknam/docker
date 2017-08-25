@@ -2,8 +2,7 @@ FROM ubuntu:latest
 MAINTAINER hknam
 
 RUN cd /etc/apt && \
-    sed -i 's/archive.ubuntu.com/kr.archive.ubuntu.com/g' sources.list && \
-        sed -i 's/archive.ubuntu.com/kr.archive.ubuntu.com/g' sources.list.d/proposed.list
+    sed -i 's/archive.ubuntu.com/kr.archive.ubuntu.com/g' sources.list
 
 
 RUN apt-get update && apt-get install -y \
