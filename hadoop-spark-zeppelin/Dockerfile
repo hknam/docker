@@ -10,7 +10,7 @@ RUN ssh-keygen -t rsa -q -N "" -f /root/.ssh/id_rsa.pub
 RUN cat /root/.ssh/id_rsa.pub >> /root/.ssh/authorized_keys
 
 # install java 1.8
-RUN wget http://repo.wadizcorp.com/repository/shared/utility/jdk8/jdk-8u144-linux-x64.tar.gz -P /root
+#RUN wget jdk-8u144-linux-x64.tar.gz -P /root
 RUN tar xzf /root/jdk-8u144-linux-x64.tar.gz -C /root/
 RUN mv /root/jdk1.8.0_144 /opt
 RUN alternatives --install /usr/bin/java java /opt/jdk1.8.0_144/bin/java 2
